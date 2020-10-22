@@ -51,14 +51,16 @@
 body {
     max-width  : 1440px;
     min-width  : 375px;
-    font-size  : 15px;
-    font-family: "Spartan", sans-serif;
+    background: url(../images/bg-pattern-top-desktop.svg) no-repeat top left,
+        url(../images/bg-pattern-bottom-desktop.svg) no-repeat bottom right;
 }
 
 section {
     max-width: 960px;
     margin   : 2rem auto;
     display  : grid;
+    font-size  : 15px;
+    font-family: "Spartan", sans-serif;
 }
 
 .introduction {
