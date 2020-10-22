@@ -201,10 +201,6 @@ section {
     .box {
         margin: 1rem;
     }
-
-    .box:hover {
-        transform: scale(1.1);
-    }
 }
 
 /** Layout Mobile/Table .classificcao li 566- 850*/
@@ -297,6 +293,10 @@ section {
 
     .box:nth-child(3) {
         transform: translateY(10%);
+    }
+    
+    .box:hover {
+        transform: scale(1.1);
     }
 
     .autor {
