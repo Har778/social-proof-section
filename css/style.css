@@ -49,16 +49,14 @@
 }
 
 body {
-    max-width  : 1440px;
-    min-width  : 375px;
-    background: url(../images/bg-pattern-top-desktop.svg) no-repeat top left,
-        url(../images/bg-pattern-bottom-desktop.svg) no-repeat bottom right;
+    max-width: 1440px;
+    min-width: 375px;
 }
 
 section {
-    max-width: 960px;
-    margin   : 2rem auto;
-    display  : grid;
+    max-width  : 960px;
+    margin     : 2rem auto;
+    display    : grid;
     font-size  : 15px;
     font-family: "Spartan", sans-serif;
 }
@@ -146,10 +144,10 @@ section {
 }
 
 .attribution {
-    margin-top: 5rem;
-    padding: 2rem;
+    margin-top : 5rem;
+    padding    : 2rem;
     font-family: 'Indie Flower', cursive;
-    text-align: center;
+    text-align : center;
 }
 
 /** Layout Mobile H1 0-438*/
@@ -297,7 +295,7 @@ section {
     .box:nth-child(3) {
         transform: translateY(10%);
     }
-    
+
     .box:hover {
         transform: scale(1.1);
     }
@@ -309,6 +307,11 @@ section {
 
 /** Layout Desktop Breakpoint 0-850*/
 @media (max-width: 850px) {
+    body {
+        background     : url(../images/bg-pattern-top-desktop.svg) no-repeat top left;
+        background-size: 100%;
+    }
+
     section {
         grid-template-areas  : "a""b""c";
         grid-template-columns: 1fr;
@@ -319,7 +322,7 @@ section {
     }
 
     .rating li {
-        margin: auto;
+        margin: 1rem auto;
     }
 
     .box p {
@@ -329,6 +332,12 @@ section {
 
 /** Layout Desktop 851-all*/
 @media (min-width: 851px) {
+    body {
+        background: url(../images/bg-pattern-top-desktop.svg) no-repeat top left,
+            url(../images/bg-pattern-bottom-desktop.svg) no-repeat right;
+        
+    }
+
     section {
         grid-template-areas  : "a b""c c";
         grid-template-columns: repeat(2, 1fr);
