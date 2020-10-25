@@ -365,13 +365,15 @@ section {
     }
 
     .rating li:nth-child(2) {
-        transform         : translateX(10%);
+        margin-left: 10%;
+        /*transform         : translateX(10%);
         /*animation-name    : first_transition_rating;
         animation-duration: 1s;*/
     }
 
     .rating li:nth-child(3) {
-        transform         : translateX(20%);
+        margin-left: 20%;
+        /*transform         : translateX(20%);
         /*animation-name    : second_transition_rating;
         animation-duration: 2s;*/
     }
